@@ -1,0 +1,25 @@
+version: 0.0.1-dev
+tags: []
+layout:
+  sol_sources: src
+  build_dir: build
+  packages_directory: .dapple/packages/
+dependencies: {}
+ignore: []
+name: hubud_talk
+dapple_version: 0.8.1
+environments:
+  develop:
+    objects:
+      ubudcoin:
+        value: '0x5a443704dd4b594b382c22a083e2bd3090a6fef3'
+        type: >-
+          UbudCoin[b3e132895320cecaba3a3eed049aff35b6be90fc19fbca3c332f3eff2bb328fe]
+    type: internal
+  morden:
+    objects:
+      ubudcoin:
+        value: '0x3bd562bc1733f8e7b68ef8a95442c79b09e8e5e0'
+        type: >-
+          UbudCoin[b3e132895320cecaba3a3eed049aff35b6be90fc19fbca3c332f3eff2bb328fe]
+    type: MORDEN

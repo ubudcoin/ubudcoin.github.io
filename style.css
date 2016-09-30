@@ -1,0 +1,24 @@
+body {
+  background: url(id1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top center; 
+  color: #eee;
+}
+
+#app {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  margin-top: 150px;
+  font-family: helvetica, arial;
+  padding: 30px;
+  background: rgba(255,255,255,0.5);
+  color: #0c110d;
+}
+
+input, button {
+  width: 100%;
+  height: 32px;
+  margin: 5px;
+}
