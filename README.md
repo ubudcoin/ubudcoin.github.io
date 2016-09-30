@@ -21,7 +21,9 @@ Install dapple with `npm -g i dapple@0.8.0-dev`
 clone this repository
 
 `src/ubudcoin.sol` contains the coin contract
+
 `src/coin_test.sol` are unit tests
+
 `src/deploy.ds.sol` can be used to deploy the coin
 
 run the tests with `dapple test --report`

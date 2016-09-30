@@ -36,13 +36,15 @@ function app() {
   document.getElementById("sendBtn").addEventListener('click', () => {
     var to = document.getElementById("to").value
     var value = document.getElementById("value").value
-    console.log(to, value);
     coin.send(to, value, {
       from: web3.eth.coinbase
-    }, (err, res) => {
-      console.log(err, res);
+    }, (err, txHash) => {
+      if(err) {
+        alert(err)
+      } else {
+        alert(`Send: ${txHash}`)
+      }
     });
   });
-
 
 }
