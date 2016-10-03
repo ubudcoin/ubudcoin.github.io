@@ -27,24 +27,19 @@
 ## GOAL :  UbudCoin - Our own "BitCoin"
 
 ---
-## Solidity
-
-![](sol.png)
-
----
 ## Build it
 ```
-contract Coin {
+contract UbudCoin {
   mapping (address => uint) public balances;
 
-  function Coin(address owner, uint balance) {
+  function UbudCoin(address owner, uint balance) {
     balances[owner] = balance;
   }
 
-  function send(address to, uint ammount) {
-    if(balances[msg.sender] >= ammount) {
-      balances[msg.sender] -= ammount;
-      balances[to] += ammount;
+  function send(address to, uint amount) {
+    if(balances[msg.sender] >= amount) {
+      balances[msg.sender] -= amount;
+      balances[to] += amount;
     }
   }
 }
@@ -55,13 +50,13 @@ contract Coin {
 ## Test it with `dapple test --report`
 ```
 import "dapple/test.sol";
-import "./coin.sol";
+import "./ubudcoin.sol";
 
 contract CoinTest is Test {
   function testInit() {
-    Coin coin = new Coin(this, 42);
+    var coin = new UbudCoin(this, 42);
     //@log `uint coin.balances(this)`
-    coin.send(0x0123456789012345678901234567890123456789, 12);
+    coin.send(0x01234, 12);
     uint newBalance = coin.balances(this);
     //@log `uint newBalance`
     assertTrue(newBalance == 30);
@@ -142,11 +137,18 @@ contract Deploy is Script {
     var to = document.getElementById("to").value
     var value = document.getElementById("value").value
     coin.send(to, value, {
-      from: web3.eth.coinbase
+      from: address
     }, (err, txHash) => {
       err ? alert(err) : alert(`Send: ${txHash}`)
     });
   });
 ```
 
+---
+# et voilà - https://ubudcoin.github.io/
+
+---
+# Resources
+
+https://github.com/ubudcoin/ubudcoin.github.io
 
