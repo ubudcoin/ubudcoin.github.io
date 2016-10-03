@@ -1,3 +1,5 @@
+[![Join the chat at https://gitter.im/sahat/hackathon-starter](https://img.shields.io/badge/GITTER-join%20chat-green.svg)](https://gitter.im/ubudcoin/Lobby#)
+
 ## Learning resources
 
 #### Dapple
@@ -8,7 +10,7 @@ https://github.com/nexusdev/dapple
 https://metamask.io
 
 #### Solidity
-solidity.readthedocs.org
+http://solidity.readthedocs.org
 
 #### Ethereum
 https://ethereumbuilders.gitbooks.io/guide/content/en/index.html
@@ -16,9 +18,9 @@ https://ethereumbuilders.gitbooks.io/guide/content/en/index.html
 # UbudCoin
 The first UbudCoin lives on **morden** @ `0x3bd562bc1733f8e7b68ef8a95442c79b09e8e5e0`
 
-Install dapple with `npm -g i dapple@0.8.0-dev`
+Install dapple with `npm -g i dapple`
 
-clone this repository
+clone this repository: `git clone https://github.com/ubudcoin/ubudcoin.github.io.git`
 
 `src/ubudcoin.sol` contains the coin contract
 
