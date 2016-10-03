@@ -15,6 +15,9 @@ http://solidity.readthedocs.org
 #### Ethereum
 https://ethereumbuilders.gitbooks.io/guide/content/en/index.html
 
+#### Token Standard
+https://github.com/nexusdev/erc20/tree/master/contracts
+
 # UbudCoin
 The first UbudCoin lives on **morden** @ `0x3bd562bc1733f8e7b68ef8a95442c79b09e8e5e0`
 
